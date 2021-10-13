@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <script src="https://kit.fontawesome.com/2dd6a68561.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="hero" id="portada">
+        <nav>
+            <h1>LOGO</h1>
+
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ACERCA DE MI</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CLIENTES</a></li>
+                <li><a href="#">CONTACTAME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="herores">
+        <span>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </span>
+
+        <div class="navbar">
+            <a href="#portada" data-text="INICIO">INICIO</a>
+            <a href="#acercademi" data-text="NOSOTROS">ACERCA DE MI</a>
+            <a href="#" data-text="SERVICIOS">SERVICIOS</a>
+            <a href="#" data-text="EQUIPO">CLIENTES</a>
+            <a href="#" data-text="CONTACTAME">CONTACTAME</a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="portada" >
+
+        <div class="portada__texto">
+            <h1>Yo soy Lina <span>Martinez</span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur.
+                <br>Lorem ipsum dolor sit amet Lorem, ipsum dolor. consectetur.
+            </p>
+            <a href="#">  </a>
+        </div>
+
+
+        <div class="portada__images">
+
+            <div class="portada__images--contenedor">
+                <img src="IMG/shape.png" alt="" class="shape">
+                <img src="IMG/girl.png" alt="" class="persona">
+               
+
+            </div>
+            <img src="IMG/Captura.PNG" alt="" class="captura">
+        </div>
+
+    </div>
+
+
+    
+    <section class="acercademi" id="acercademi">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000" fill-opacity="1" d="M0,160L48,154.7C96,149,192,139,288,133.3C384,128,480,128,576,154.7C672,181,768,235,864,218.7C960,203,1056,117,1152,90.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        <h1>ACERCA DE MI</h1>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, blanditiis dolor. Amet maiores inventore possimus magni? Veritatis alias aspernatur, quibusdam animi suscipit quod eveniet a in possimus. Rem atque commodi maiores aperiam quam itaque veritatis assumenda unde est, quasi, laborum culpa harum sint iusto magnam dolorum. Numquam facere qui placeat totam.</p>
+    </section>
+
+
+
+
+
+
+
+    <section id="team" class="seccion">
+
+
+        <div id="featuredosn" class="titulo">
+            <p>--------------------</p>
+            <h1>SERVICIOS</h1>
+        </div>
+
+
+
+        <div class="service-box">
+            <div class="single-service">
+                <img src="IMG/kris-atomic-Xa8fX8bQCgs-unsplash.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>ESMALTADO TRADICIONAL</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo iste nulla magni quas quod
+                        mollitia.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="IMG/designecologist-r-Ej0NQmFlQ-unsplash.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>SEMIPERMANENTES</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo iste nulla magni quas quod
+                        mollitia.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="IMG/bryony-elena-KZKbGgQPCtU-unsplash.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>ACRILICAS</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo iste nulla magni quas quod
+                        mollitia.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="IMG/bryony-elena-KZKbGgQPCtU-unsplash.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Lorem, ipsum.</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo iste nulla magni quas quod
+                        mollitia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.querySelector('#menu-btn').onclick = () => {
+            document.querySelector('#menu-btn').classList.toggle('fa-times');
+
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+
+        document.querySelector('.navbar').onclick = () => {
+            if (document.querySelector('.navbar').classList.toggle('active')) {
+                document.querySelector('.navbar').classList.toggle('inactive')
+
+
+            }
+            if (document.querySelector('#menu-btn').classList.toggle('fa-times')) {
+                document.querySelector('#menu-btn').classList.toggle('active');
+
+            }
+
+
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
